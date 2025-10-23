@@ -1,0 +1,22 @@
+// Copyright 2021 Manna Harbour
+// https://github.com/manna-harbour/miryoku
+
+// Custom behavior configuration for hold-preferred on specific key position
+
+/ {
+  behaviors {
+    // Hold-preferred layer-tap for left pinkie bottom row (position 20)
+    // In Miryoku 34-key layout:
+    // - Position 20 is left pinkie, bottom row (Z key in QWERTY)
+    // - This makes U_LT(U_BUTTON, Z) use hold-preferred instead of tap-preferred
+    u_lt_hp20: u_lt_hold_preferred_20 {
+      compatible = "zmk,behavior-hold-tap";
+      label = "U_LT_HOLD_PREF_20";
+      #binding-cells = <2>;
+      tapping-term-ms = <U_TAPPING_TERM>;
+      flavor = "hold-preferred";
+      bindings = <&mo>, <&kp>;
+      // Optional: can add hold-trigger-key-positions here if needed for positional behavior
+    };
+  };
+};
