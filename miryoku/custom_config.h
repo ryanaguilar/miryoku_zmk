@@ -16,7 +16,7 @@
 // Override QWERTY base layer to use hold-preferred for:
 // - Left pinkie bottom row (Z key at position 20) uses U_LT_HP instead of U_LT
 // - Right thumb SYM key (RET at position 35) uses U_LT_SYM_HP instead of U_LT_SYM
-#define MIRYOKU_ALTERNATIVES_BASE_QWERTY \
+#define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 U_MT_TL(LGUI, A),     U_MT_TL(LALT, S),     U_MT_TL(LCTRL, D),    U_MT_TL(LSHFT, F),    &kp G,             &kp H,             U_MT_TL(LSHFT, J),    U_MT_TL(LCTRL, K),    U_MT_TL(LALT, L),     U_MT_TL(LGUI, SQT),   \
 U_LT_HP(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
