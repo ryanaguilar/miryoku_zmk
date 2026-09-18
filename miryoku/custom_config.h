@@ -6,7 +6,8 @@
 //   Outer:  tap = Backspace, hold = Escape
 //   Middle: tap = Enter, hold = Sym (nums / nav / hyphen)
 //   Inner:  tap = Space, hold = Mirror
-// ASDF chord → BT; Q/W/E/R = BT 0–3, T = USB/BT toggle
+// BT: hold G (or ASDF chord) → BT layer; Q/W/E/R = profiles 0–3, T = USB/BT toggle
+//     Middle+inner thumbs = Shift (hold both); Shift+Q/W/E/R clears that BT profile
 
 #pragma once
 
@@ -40,7 +41,7 @@ MIRYOKU_X(FUN,    "Fun")
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-&kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
+&kp A,             &kp S,             &kp D,             &kp F,             U_LT(U_MEDIA, G),  &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
 U_NP,              U_NP,              U_MT(TAB, BSPC), U_LT_SYM_HP(U_SYM, SPACE), U_LT(U_MOUSE, RET), U_NA, U_NA, U_NA, U_NP, U_NP
 

@@ -14,15 +14,21 @@
     };
   };
 
-  // Hold A+S+D+F → BT layer (36-key Miryoku positions).
-  // Corne-like boards with unused outer columns: use <13 14 15 16>.
+  // Hold A+S+D+F → BT layer (Corne positions; unused outer columns included).
+  // Plain 36-key boards: use <10 11 12 13> instead.
+  // Middle+inner left thumbs → Shift while held (Corne: 37=middle, 38=inner).
   combos {
     compatible = "zmk,combos";
     combo_bt {
       timeout-ms = <50>;
-      key-positions = <10 11 12 13>;
+      key-positions = <13 14 15 16>;
       bindings = <&mo U_MEDIA>;
       layers = <U_BASE>;
+    };
+    combo_shift {
+      timeout-ms = <50>;
+      key-positions = <37 38>;
+      bindings = <&kp LSHFT>;
     };
   };
 };
