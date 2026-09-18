@@ -3,9 +3,9 @@
 
 // One-handed left draft-writing config (no home-row mods):
 // Thumbs (outer → inner):
-//   Outer:  tap = Space, hold = Mirror
+//   Outer:  tap = Backspace, hold = Escape
 //   Middle: tap = Enter, hold = Sym (nums / nav / hyphen)
-//   Inner:  tap = Backspace, hold = Shift
+//   Inner:  tap = Space, hold = Mirror
 // ASDF chord → BT; Q/W/E/R = BT 0–3, T = USB/BT toggle
 
 #pragma once
@@ -42,28 +42,28 @@ MIRYOKU_X(FUN,    "Fun")
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_LT(U_MOUSE, SPACE), U_LT_SYM_HP(U_SYM, RET), U_MT(LSHFT, BSPC), U_NA, U_NA, U_NA, U_NP, U_NP
+U_NP,              U_NP,              U_MT(ESC, BSPC), U_LT_SYM_HP(U_SYM, RET), U_LT(U_MOUSE, SPACE), U_NA, U_NA, U_NA, U_NP, U_NP
 
 // Mirror: right-hand QWERTY onto left
 #define MIRYOKU_LAYER_MOUSE \
 &kp P,             &kp O,             &kp I,             &kp U,             &kp Y,             U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 &kp SQT,           &kp L,             &kp K,             &kp J,             &kp H,             U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 &kp SLASH,         &kp DOT,           &kp COMMA,         &kp M,             &kp N,             U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
-// Sym: numbers, arrows, hyphen, esc
+// Sym: numbers, arrows, hyphen
 #define MIRYOKU_LAYER_SYM \
 &kp N1,            &kp N2,            &kp N3,            &kp N4,            &kp N5,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 &kp N6,            &kp N7,            &kp N8,            &kp N9,            &kp N0,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-U_NP,              U_NP,              &kp ESC,           U_NA,              &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 // BT: QWER = profiles 0–3, T = USB/BT toggle
 #define MIRYOKU_LAYER_MEDIA \
 &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       &u_out_tog,        U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
 U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
-U_NP,              U_NP,              U_NA,              U_NA,              &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+U_NP,              U_NP,              &kp BSPC,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #if __has_include("custom_config.dtsi")
   #include "custom_config.dtsi"
