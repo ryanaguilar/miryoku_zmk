@@ -3,7 +3,7 @@
 
 * Miryoku ZMK Quickstart Guide [[https://raw.githubusercontent.com/manna-harbour/miryoku/master/data/logos/miryoku-roa-32.png]]
 
-A personalised build of [[https://github.com/manna-harbour/miryoku_zmk][Miryoku ZMK]] can be [[#initial-setup][set up]], [[#build][built]], [[#download][downloaded]], and [[#flash][flashed]] onto your keyboard in a few minutes without installing any software or editing any files.
+a personalised build of [[https://github.com/manna-harbour/miryoku_zmk][Miryoku ZMK]] can be [[#initial-setup][set up]], [[#build][built]], [[#download][downloaded]], and [[#flash][flashed]] onto your keyboard in a few minutes without installing any software or editing any files.
 
 
 ** Initial Setup
