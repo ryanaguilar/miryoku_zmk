@@ -42,7 +42,7 @@ MIRYOKU_X(FUN,    "Fun")
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              U_MT(ESC, BSPC), U_LT_SYM_HP(U_SYM, RET), U_LT(U_MOUSE, SPACE), U_NA, U_NA, U_NA, U_NP, U_NP
+U_NP,              U_NP,              U_MT(ESC, RET), U_LT_SYM_HP(U_SYM, BSPC), U_LT(U_MOUSE, SPACE), U_NA, U_NA, U_NA, U_NP, U_NP
 
 // Mirror: right-hand QWERTY onto left
 #define MIRYOKU_LAYER_MOUSE \
